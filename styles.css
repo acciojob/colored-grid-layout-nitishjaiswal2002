@@ -1,1 +1,32 @@
 /*  your css code here. If applicable */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 5px;
+}
+
+.grid-item {
+  background-color: white;
+  color: white;
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large {
+  grid-column: span 4;
+}
+
+.medium {
+  grid-row: span 4;
+}
+
+.small {
+  grid-column: span 2;
+}
+
+.green {
+  background-color: green;
+}
